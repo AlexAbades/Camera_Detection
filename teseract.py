@@ -1,4 +1,6 @@
-# Text detection using Teseract 
+#  Text detection using open cv to acces own camera, then we caputre a screenshot when we press a specific key which is the same that 
+# closes the camera. Once we've captured that screenchot we use tesseract to 
+# fusing Teseract 
 
 import cv2 as cv
 from PIL import Image
@@ -28,8 +30,8 @@ while True:
     
     # Create a exit key 
     if cv.waitKey(1) == ord('q'):
-        # We should capture an image to detect the tesseract
-        I1 = cv.imwrite('Image1.jpg', gray)
+        # We should capture an image in order to pass it to the tesseract
+        I1 = cv.imwrite('Image2.jpg', gray)
         break
 # When everything done, release the capture
 cap.release()
@@ -39,9 +41,9 @@ cv.destroyAllWindows()
 def tesseract():
     print('hello i am being called')
     path_to_tesseract = r"C:\Program Files\Tesseract-OCR\tesseract"
-    pathI1 = 'Image1.jpg'
+    pathI1 = 'Image2.jpg'
     pytesseract.tesseract_cmd = path_to_tesseract
     text = pytesseract.image_to_string(Image.open(pathI1))
     print(text)
 
-tesseract()
+# What happens if we call tesseract in each frame ? We'll have a loop until we end it scanning the text ? Probelm with memory 
