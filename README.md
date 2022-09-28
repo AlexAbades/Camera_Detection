@@ -1,13 +1,16 @@
 # Camera_Detection
 
+Project where I try to detect in real life the prices from the products using camera detection. 
 
-# Do we really need to take in consideration all the possible problems of real life detection ?
-# We are trying to detect the price, and we can have problems of brightness and reflection but the problems with:
-# - Non-Planar objects
-# - Unknown layout
 
-# Almost al the prices are in a standard layout, white with black letters or either in orange or other color for 
-# the offers. 
+Do we really need to take in consideration all the possible problems of real life detection ?
+We are trying to detect the price, and we can have problems of brightness and reflection but the problems with:
+
+- Non-Planar objects
+- Unknown layout
+
+Almost al the prices are in a standard layout, white with black letters or either in orange or other color for 
+the offers. 
 
 - How we detect the language of the etiquete:
 	- Take a look on how google translate does it 
