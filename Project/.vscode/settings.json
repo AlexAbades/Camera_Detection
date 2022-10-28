@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Postgres Local",
+            "database": "neocare",
+            "username": "postgres",
+            "password": "a1l2e3x41995"
+        }
+    ]
+}
